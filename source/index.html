@@ -5,8 +5,308 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
+    <header class="page-header ">
+      <a class="page-header__logo logo"><img width="96px" height="15px" alt="Логотип Понали"></img></a>
+      <button class="page-header__burger"></button>  <!--page-header__close-->
+      <div class="page-header__menu visually-hidden">
+        <p class="page-header__paragraph">
+          О сервисе
+          Направления
+          Попутчики
+        </p>
+        <a class="page-header__link" href="#"></a>
+        <ul class="page-header__list contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__item-link" href="tel:88005558628"><!--Повышает ли пользовательский экспириенс, если объединить иконку и текст в ссылку? Вроде бы площадь для клика больше становится:) ? -->
+              <svg></svg>
+              <span>8 800 555-86-28</span>
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <a class="contacts-list__item-link" href="mailto:mail@htmlacademy.ru">
+              <svg></svg>
+              <span>mail@htmlacademy.ru</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="page-header__list social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#"><svg></svg></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><svg></svg></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><svg></svg></a></li>
+          </ul>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <h1>Сервис для поиска попутчиков для путешествий Погнали</h1>
+      <section class="intro">
+        <h2 class="visually-hidden">Бла-бла</h2>
+        <b class="intro__slogan">В путешествие с крутыми попутчиками!</b>
+        <div class="intro__wrapper">
+          <ul class="intro__list">
+            <li><a class="intro__item" href="tel:#"></a></li>
+            <li><a class="intro__item" href="mailto:#"></a></li>
+            <li><a class="intro__item intro__item--autorization" href="#">авторизация</a></li>
+          </ul>
+        </div>
+        <blockquote class="intro__cite paragraph--white">
+          «Лучшее приложение, что я видел в жизни!»
+        </blockquote>
+        <cite class="intro__cite-author slogan"><!--Возможно тут будет лишним intro__cite-author но slogan повторяется далее-->
+          Мурат Эльтазин
+          главный редактор
+          газеты «гаджетлайф»
+        </cite>
+      </section>
 
+      <section class="about">
+        <h2 class="about__header sect-header">О сервисе</h2>
+        <div class="about__wrapper">
+          <ol class="about__list"><!--Все ордер листы нумерутся справа. Стоит сделать отдельный класс для этого?-->
+            <li class="about__item">
+              Выберите
+              направление</li>
+            <li class="about__item">
+              Изучите идеи
+              путешественников</li>
+            <li class="about__item">
+              Находите тех,
+              кто похож на вас</li>
+            <li class="about__item">
+              Путешествуйте
+              вместе!</li>
+          </ol>
+        </div>
+        <p class="about__paragraph paragraph--white">
+          Любое путешествие веселее
+          с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
+        </p>
+        <b class="slogan">
+          А если найдете кого-то
+          близкого по духу — скорее
+          зовите в совместный трип!
+        </b>
+      </section>
+
+      <section class="directions">
+        <h2 class="directions__header sect-header">Направления</h2>
+        <p class="directions__paragraph">
+          Мы не продаем туры
+          и ничего не рекламируем.
+          Люди сами пишут о странах, куда хотели бы отправиться
+          и чем можно там заняться.
+        </p>
+        <div class="directions__wraper">
+          <ul class="directions__list">
+            <li class="directions__item">
+              <img class="directions__img" src="via.placeholder.com/270x110" alt="Тайланд">
+              <div class="directions__wrapper-info"><!--Возможно лишняя обертка будет-->
+                <table class="directions__info"><!--Можно и без таблицы, но вроде соотношение значений-->
+                  <tr>
+                    <td class="directions__path">
+                      <h3 class="directions__info-header">Тайланд</h3>
+                      <span class="directions__info-slogan">Джунгли зовут!</span>
+                    </td>
+                    <td class="directions__value"><!--Возможно лишний класс-->
+                      <span class="directions__followers">18321</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="directions__item">
+              <img class="directions__img" src="via.placeholder.com/270x110" alt="Франция">
+              <div class="directions__info"></div>
+              <div class="directions__wrapper-info"><!--Возможно лишняя обертка будет-->
+                <table class="directions__info">
+                  <tr>
+                    <td class="directions__path">
+                      <h3 class="directions__info-header">Франция</h3>
+                      <span class="directions__info-slogan">Трэ бьен, манифик!</span>
+                    </td>
+                    <td class="directions__value"><!--Возможно лишний класс-->
+                      <span class="directions__followers">12518</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li class="directions__item">
+              <img class="directions__img" src="via.placeholder.com/270x110" alt="Чехия">
+              <div class="directions__info"></div>
+              <div class="directions__wrapper-info"><!--Возможно лишняя обертка будет-->
+                <table class="directions__info">
+                  <tr>
+                    <td class="directions__path">
+                      <h3 class="directions__info-header">Чехия</h3>
+                      <span class="directions__info-slogan">Закоулки старой Европы</span>
+                    </td>
+                    <td class="directions__value"><!--Возможно лишний класс-->
+                      <span class="directions__followers">5326</span>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <a class="directions__link button" href="./form.html">Показать все</a><!--Стрелочку вроде псевдоэлементом можно запилить-->
+      </section>
+
+      <section class="fellow-trevelers">
+        <h2 class="fellow_trevelers__header sect-header">Попутчики</h2>
+        <p class="fellow-trevelers__paragraph paragraph--white">
+          Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+        </p>
+        <b class="fellow-trevelers__slogan slogan">
+          Теперь можно легко найти единомышленников!
+        </b>
+        <!--Какая то жесть ниже )-->
+        <div class="fellow-trevelers__wrapper">
+          <ul class="fellow-trevelers__list">
+            <li class="fellow-trevelers__item">
+              <img class="fellow-trevelers__photo" src="via.placeholder.com/270x270" alt="Таня Фирсова">
+              <div class="fellow-trevelers__level-info">
+                <span class="fellow-trevelers__level">99</span><!--Подпись ведь можно сделать через css: content ? -->
+              </div>
+              <div class="fellow-trevelers__info">
+                <ul class="fellow-trevelers__list-country">
+                  <li class="fellow-trevelers__country-item"><svg></svg></li>
+                  <li class="fellow-trevelers__country-item"><svg></svg></li>
+                  <li class="fellow-trevelers__country-item"><svg></svg></li>
+                </ul>
+                <p class="fellow-trevelers__name">Таня Фирсова</p>
+                <p class="fellow-trevelers__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+                <ul class="fellow-trevelers__list-travel">
+                  <li class="fellow-trevelers__item-travel fellow-trevelers__item-travel--active"><svg></svg></li>
+                  <li class="fellow-trevelers__item-travel"><svg></svg></li>
+                  <li class="fellow-trevelers__item-travel"><svg></svg></li>
+                  <li class="fellow-trevelers__item-travel"><svg></svg></li>
+                </ul>
+              </div>
+            </li>
+            <li class="fellow-trevelers__item">
+                <img class="fellow-trevelers__photo" src="via.placeholder.com/270x270" alt="Петя Демин">
+                <div class="fellow-trevelers__level-info">
+                  <span class="fellow-trevelers__level">80</span>
+                </div>
+                <div class="fellow-trevelers__info">
+                  <ul class="fellow-trevelers__list-country">
+                    <li class="fellow-trevelers__country-item"><svg></svg></li>
+                    <li class="fellow-trevelers__country-item"><svg></svg></li>
+                  </ul>
+                  <p class="fellow-trevelers__name fellow-trevelers__name--online">Петя Демин</p>
+                  <p class="fellow-trevelers__tags">#бургер #бар #футбол #концерт #крафт</p>
+                  <ul class="fellow-trevelers__list-travel">
+                    <li class="fellow-trevelers__item-travel fellow-trevelers__item-travel--active"><svg></svg></li>
+                    <li class="fellow-trevelers__item-travel"><svg></svg></li>
+                    <li class="fellow-trevelers__item-travel fellow-trevelers__item-travel--active"><svg></svg></li>
+                    <li class="fellow-trevelers__item-travel fellow-trevelers__item-travel--active"><svg></svg></li>
+                  </ul>
+                </div>
+              </li>
+          </ul>
+        </div>
+        <a class="button" href="./catalog.html">Показать всех</a>
+      </section>
+
+      <section class="join-us">
+        <h2 class="join-us__header sect-header">
+          Добавьте
+          свой
+          профиль
+        </h2>
+        <ol class="join-us__list">
+          <li class="join-us__item">
+            Базовое размещение
+            Бесплатно
+          </li>
+          <li class="join-us__item">
+            Вывод на первых позициях
+            99 руб./мес</li>
+          <li class="join-us__item">
+            Кастомный цвет карточки
+            59 руб./мес</li>
+        </ol>
+        <a class="join-us__button" href="#">Показать тарифы для бизнеса</a>
+        <div class="join-us__modal">
+          <h2 class="sect-header">Бизнес-тарифы</h2>
+          <ul class="join-us__list-modal">
+            <li class="join-us__item-modal">
+              Реклама у блоггера
+              300 000 руб./пост
+            </li>
+            <li class="join-us__item-modal">
+              Накрутка подписчиков
+              от 1 руб./шт.
+            </li>
+            <li class="join-us__item-modal">
+              Лайки от ботов
+              от 20 коп./лайк
+            </li>
+            <li class="join-us__item-modal">
+              Ваш продакт-плейсмент
+              Индивидуально
+            </li>
+          </ul>
+          <button class="join-us__close">Закрыть окно</button>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <h2 class="contact-us__header sect-header">Заинтересовались?</h2>
+        <p class="contact-us__paragraph">
+          Зарегистрируйтесь,
+          это быстро и бесплатно!
+          Уже зарегистрированы? Тогда скорее <a class="contact-us__link" href="#">авторизуйтесь</a>.
+        </p>
+        <form class="contact-us__form" action="http://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="email">Почта для регистрации</label>
+          <input class="contact-us__email" type="email" name="email" id="email">
+          <button class="contact-us__submit" type="submit"></button>
+        </form>
+        <p class="contact-us__paragraph"></p>
+        <ul class="contact-us__list contacts-list">
+          <li class="contacts-list__item">
+            <a class="contacts-list__item-link contacts-list__item-link--yellow" href="tel:88005558628">
+              <svg></svg>
+              <span>8 800 555-86-28</span>
+            </a>
+          </li>
+          <li class="contacts-list__item">
+            <a class="contacts-list__item-link contacts-list__item-link--yellow" href="mailto:mail@htmlacademy.ru">
+              <svg></svg>
+              <span>mail@htmlacademy.ru</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="find-us">
+        <h2 class="visually-hidden">Найдите нас</h2>
+        <svg></svg>
+        <address class="find-us__adress">
+          ул. Большая
+          Конюшенная, 19/8
+        </address>
+        <a class="find-us__way button" href="#">Проложить маршрут</a>
+        <iframe class="find-us__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1573404108263!5m2!1sen!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </section>
+    </main>
+
+    <footer calss="page-footer">
+      <a class="page-footer__logo logo logo--blue"><img width="96px" height="15px" alt="Логотип Понали"></img></a>
+      <ul class="page-footer__list social-list">
+        <li class="social-list__item social-list__item--yellow"><a class="social-list__link social-list__link--blue" href="#"><svg></svg></a></li>
+        <li class="social-list__item social-list__item--yellow"><a class="social-list__link social-list__link--blue" href="#"><svg></svg></a></li>
+        <li class="social-list__item social-list__item--yellow"><a class="social-list__link social-list__link--blue" href="#"><svg></svg></a></li>
+      </ul>
+      <div class="page-footer__dev">
+        <span></span>
+        <a class="page-footer__dev-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg></svg>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
